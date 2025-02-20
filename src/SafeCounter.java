@@ -7,9 +7,9 @@ import java.util.concurrent.atomic.LongAdder;
 import java.util.concurrent.locks.ReentrantLock;
 
 interface ISafeCounter { //Интерфейс для использования различных реализаций safeCounter
-    public void increment();
-    public void decrement();
-    public int getCount();
+    void increment();
+    void decrement();
+    int getCount();
 }
 
 class LongAdderSafeCounter implements ISafeCounter { //реализация SafeCounter с использованием LongAdder
